@@ -11,7 +11,7 @@ body {
 .topnav {
   width: 100%;
   background: #6d8494;
-  padding: 1.2rem 2rem;
+  padding: 1.4rem 2rem;   /* bigger bar */
   position: fixed;
   top: 0;
   left: 0;
@@ -20,16 +20,23 @@ body {
 
 .nav-links {
   display: flex;
-  gap: 2.5rem;
+  gap: 3rem;
   align-items: center;
 }
 
-.nav-links a,
-.nav-dropdown span {
+/* Force larger navigation text */
+
+.nav-links a {
   color: white;
   text-decoration: none;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+}
+
+.nav-dropdown span {
+  color: white;
+  font-weight: bold;
+  font-size: 1.4rem;
   cursor: pointer;
 }
 
@@ -50,20 +57,187 @@ body {
   display: none;
   position: absolute;
   background: #6d8494;
-  padding: 0.8rem 1.2rem;
+  padding: 1rem 1.2rem;
   top: 100%;
   left: 0;
-  min-width: 260px;
+  min-width: 280px;
   z-index: 1001;
 }
 
 .dropdown-content a {
   display: block;
   padding: 8px 0;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: normal;
 }
 
+.nav-dropdown:hover .dropdown-content,
+.dropdown-content:hover {
+  display: block;
+}
+
+
+/* =========================
+   Page Content
+   ========================= */
+
+.content {
+  margin-top: 110px;   /* push content below larger navbar */
+  padding: 2rem 3rem;
+  background: white;
+  min-height: 100vh;
+}
+
+.content-image {
+  width: 1000px;
+  max-width: 100%;
+  display: block;
+  margin: 2rem 0;
+  border-radius: 8px;
+}
+
+footer {
+  padding: 1rem 2rem;
+  font-size: 0.9rem;
+  color: #888;
+  text-align: right;
+}
+
+
+/* =========================
+   Typography
+   ========================= */
+
+h2 {
+  color: #6d8494;
+  font-size: 1.9rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+
+/* =========================
+   Tables
+   ========================= */
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+
+/* =========================
+   Code Blocks
+   ========================= */
+
+pre {
+  position: relative;
+  background-color: #f5f5f5;
+  padding: 12px;
+  border-radius: 5px;
+  max-width: 100%;
+  overflow-x: auto;
+  margin-bottom: 2rem;
+}
+
+pre code {
+  font-family: monospace;
+  white-space: pre;
+  padding-right: 2.5em;
+}
+
+.copy-block-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: none;
+  border: none;
+  font-size: 1em;
+  color: #008cba;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+pre:hover .copy-block-btn {
+  opacity: 0.6;
+}
+
+.copy-block-btn:hover {
+  opacity: 1;
+}
+
+
+/* =========================
+   Course Schedule Cards
+   ========================= */
+
+.course-day {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  background: #fafafa;
+}
+
+.course-day summary {
+  cursor: pointer;
+  padding: 14px 18px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  background: #e9eef2;
+  border-radius: 6px;
+}
+
+.course-day summary:hover {
+  background: #dbe4ea;
+}
+
+.day-content {
+  padding: 14px 18px;
+  line-height: 1.5;
+}
+
+
+/* Bullet lists */
+
+.day-content ul {
+  margin: 8px 0 0 20px;
+  padding: 0;
+}
+
+.day-content li {
+  margin-bottom: 6px;
+}
+
+
+/* =========================
+   Mobile Layout
+   ========================= */
+
+@media (max-width: 900px) {
+
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .dropdown-content {
+    position: static;
+  }
+
+  .content {
+    padding: 1.5rem;
+  }
+
+}
 .nav-dropdown:hover .dropdown-content,
 .dropdown-content:hover {
   display: block;
