@@ -9,44 +9,35 @@
 
 <body>
 
-<input type="checkbox" id="menu-toggle">
 
-<label for="menu-toggle" class="menu-button">
-☰ Menu
-</label>
+<!-- Top Navigation -->
 
+<div class="topnav">
 
-<div class="sidebar">
-
-<label for="menu-toggle" class="menu-close">✕</label>
-
-<div class="sidebar-links">
+<div class="nav-links">
 
 <a href="index.html">Home</a>
-<br>
 
 <a href="team.html">Meet the Team</a>
-<br>
 
-<div class="subsection">
-<div class="section-subtitle">Course Outline</div>
+<div class="nav-dropdown">
+<span>Course Outline</span>
 
+<div class="dropdown-content">
 <a href="#peru">Peru Fieldwork</a>
 <a href="#uk">UK Clinical, Laboratory and Bioinformatics</a>
+</div>
 
 </div>
 
-<br>
-
 <a href="apply.html">Apply Now</a>
-<br>
 
 <a href="contact.html">Contact Us</a>
 
-<br><br>
+</div>
 
 </div>
-</div>
+
 
 
 <div class="content">
@@ -56,27 +47,16 @@
 <img src="Pictures/Mosquito.jpg" class="content-image">
 
 
-<h3>Pre-course Setup</h3>
-
-<p>
-Please install all required software and download the course data before attending:
-</p>
-
-<p>
-<a href="pre-workshop_instructions.html">Pre-course instructions</a>
-</p>
-
-<br>
-
 
 <h3>Programme</h3>
 
 
-<h3>Peru Field Module (Days 1–5)</h3>
+<h3 id="peru">Peru Fieldwork (Days 1–5)</h3>
 
 
 <details class="course-day" open id="day1">
 <summary>Day 1 — Foundational Concepts</summary>
+
 <div class="day-content">
 
 • Welcome & Course Overview<br>
@@ -91,8 +71,10 @@ Please install all required software and download the course data before attendi
 </details>
 
 
+
 <details class="course-day" id="day2">
 <summary>Day 2 — Field Surveillance</summary>
+
 <div class="day-content">
 
 • Rural mosquito trapping expedition<br>
@@ -102,8 +84,10 @@ Please install all required software and download the course data before attendi
 </details>
 
 
+
 <details class="course-day" id="day3">
 <summary>Day 3 — Excursion</summary>
+
 <div class="day-content">
 
 • Excursion day
@@ -112,8 +96,10 @@ Please install all required software and download the course data before attendi
 </details>
 
 
+
 <details class="course-day" id="day4">
 <summary>Day 4 — Mosquito Morphology & Identification</summary>
+
 <div class="day-content">
 
 • Mosquito taxonomy overview<br>
@@ -125,8 +111,10 @@ Please install all required software and download the course data before attendi
 </details>
 
 
+
 <details class="course-day" id="day5">
 <summary>Day 5 — Mosquito Surveillance</summary>
+
 <div class="day-content">
 
 • Disease surveillance and outbreak response<br>
@@ -139,14 +127,18 @@ Please install all required software and download the course data before attendi
 </details>
 
 
+
 <br>
 
 
-<h3>UK Module (Days 6–10)</h3>
+
+<h3 id="uk">UK Clinical, Laboratory and Bioinformatics (Days 6–10)</h3>
+
 
 
 <details class="course-day" id="day6">
 <summary>Day 6 — Mosquito-borne Diseases</summary>
+
 <div class="day-content">
 
 • Malaria I: epidemiology, transmission dynamics, clinical presentation<br>
@@ -160,8 +152,10 @@ Please install all required software and download the course data before attendi
 </details>
 
 
+
 <details class="course-day" id="day7">
 <summary>Day 7 — Emerging Mosquito Pathogens</summary>
+
 <div class="day-content">
 
 • Yellow fever<br>
@@ -174,8 +168,10 @@ Please install all required software and download the course data before attendi
 </details>
 
 
+
 <details class="course-day" id="day7lab">
 <summary>Proteomics Laboratory – MALDI-TOF</summary>
+
 <div class="day-content">
 
 • Laboratory safety and biosecurity<br>
@@ -188,8 +184,10 @@ Please install all required software and download the course data before attendi
 </details>
 
 
+
 <details class="course-day" id="day8">
 <summary>Day 8 — DNA/RNA Extraction</summary>
+
 <div class="day-content">
 
 • DNA extraction<br>
@@ -200,8 +198,10 @@ Please install all required software and download the course data before attendi
 </details>
 
 
+
 <details class="course-day" id="day8seq">
 <summary>Nanopore Sequencing</summary>
+
 <div class="day-content">
 
 • Library preparation<br>
@@ -212,8 +212,10 @@ Please install all required software and download the course data before attendi
 </details>
 
 
+
 <details class="course-day" id="day9">
 <summary>Day 9 — Bioinformatics</summary>
+
 <div class="day-content">
 
 • Introduction to sequencing files and quality control<br>
@@ -223,8 +225,10 @@ Please install all required software and download the course data before attendi
 </details>
 
 
+
 <details class="course-day" id="day9phylo">
 <summary>Phylogenetic Reconstruction</summary>
+
 <div class="day-content">
 
 • Phylogenetic reconstruction (Xavier Didelot)
@@ -233,8 +237,10 @@ Please install all required software and download the course data before attendi
 </details>
 
 
+
 <details class="course-day" id="day9rna">
 <summary>RNA Transcriptomics</summary>
+
 <div class="day-content">
 
 • Transcriptomic analysis of mosquito-borne pathogens
@@ -243,8 +249,10 @@ Please install all required software and download the course data before attendi
 </details>
 
 
+
 <details class="course-day" id="day10">
 <summary>Day 10 — Bioinformatics Workshop</summary>
+
 <div class="day-content">
 
 • Bioinformatics workshop: interpreting sequencing results
@@ -253,8 +261,10 @@ Please install all required software and download the course data before attendi
 </details>
 
 
+
 <details class="course-day" id="day10vector">
 <summary>Vector Control Tools</summary>
+
 <div class="day-content">
 
 • Indoor residual spraying (IRS)<br>
@@ -266,8 +276,10 @@ Please install all required software and download the course data before attendi
 </details>
 
 
+
 <details class="course-day" id="day10climate">
 <summary>Climate Change and Mosquito-borne Diseases</summary>
+
 <div class="day-content">
 
 • Climate impacts on mosquito distribution<br>
@@ -280,9 +292,15 @@ Please install all required software and download the course data before attendi
 </details>
 
 
+
 <br>
 
-<p>If you have questions please <a href="mailto:l.grandjean@ucl.ac.uk">contact us</a>.</p>
+
+
+<p>If you have questions please 
+<a href="mailto:l.grandjean@ucl.ac.uk">contact us</a>.
+</p>
+
 
 
 <footer>
