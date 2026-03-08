@@ -1,3 +1,7 @@
+/* =========================
+   Base
+   ========================= */
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -5,36 +9,42 @@ body {
 
 
 /* =========================
-   Top Navigation
+   Top Navigation Bar
    ========================= */
 
 .topnav {
   width: 100%;
   background: #6d8494;
-  padding: 1.4rem 2rem;   /* bigger bar */
+  padding: 1.4rem 2rem;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1000;
-}
 
-.nav-links {
   display: flex;
-  gap: 3rem;
   align-items: center;
 }
 
-/* Force larger navigation text */
+/* UCL logo */
 
-.nav-links a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.4rem;
+.ucl-logo {
+  height: 60px;
+  margin-right: 30px;
 }
 
+
+/* Navigation links */
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.nav-links a,
 .nav-dropdown span {
   color: white;
+  text-decoration: none;
   font-weight: bold;
   font-size: 1.4rem;
   cursor: pointer;
@@ -57,11 +67,10 @@ body {
   display: none;
   position: absolute;
   background: #6d8494;
-  padding: 1rem 1.2rem;
+  padding: 0.8rem 1.2rem;
   top: 100%;
   left: 0;
-  min-width: 280px;
-  z-index: 1001;
+  min-width: 260px;
 }
 
 .dropdown-content a {
@@ -82,11 +91,15 @@ body {
    ========================= */
 
 .content {
-  margin-top: 110px;   /* push content below larger navbar */
+  margin-top: 110px;      /* space below nav bar */
+  margin-left: 5cm;       /* white margin on left side */
   padding: 2rem 3rem;
   background: white;
   min-height: 100vh;
 }
+
+
+/* Images */
 
 .content-image {
   width: 1000px;
@@ -95,6 +108,9 @@ body {
   margin: 2rem 0;
   border-radius: 8px;
 }
+
+
+/* Footer */
 
 footer {
   padding: 1rem 2rem;
@@ -142,7 +158,6 @@ pre {
   background-color: #f5f5f5;
   padding: 12px;
   border-radius: 5px;
-  max-width: 100%;
   overflow-x: auto;
   margin-bottom: 2rem;
 }
@@ -176,7 +191,7 @@ pre:hover .copy-block-btn {
 
 
 /* =========================
-   Course Schedule Cards
+   Course Day Cards
    ========================= */
 
 .course-day {
@@ -205,7 +220,7 @@ pre:hover .copy-block-btn {
 }
 
 
-/* Bullet lists */
+/* Bullet formatting */
 
 .day-content ul {
   margin: 8px 0 0 20px;
@@ -234,176 +249,12 @@ pre:hover .copy-block-btn {
   }
 
   .content {
+    margin-left: 0;
     padding: 1.5rem;
   }
 
-}
-.nav-dropdown:hover .dropdown-content,
-.dropdown-content:hover {
-  display: block;
-}
-
-
-/* =========================
-   Page Content
-   ========================= */
-
-.content {
-  margin-top: 90px;
-  padding: 2rem 3rem;
-  background: white;
-  min-height: 100vh;
-}
-
-.content-image {
-  width: 1000px;
-  max-width: 100%;
-  display: block;
-  margin: 2rem 0;
-  border-radius: 8px;
-}
-
-footer {
-  padding: 1rem 2rem;
-  font-size: 0.9rem;
-  color: #888;
-  text-align: right;
-}
-
-
-/* =========================
-   Typography
-   ========================= */
-
-h2 {
-  color: #6d8494;
-  font-size: 1.8rem;
-}
-
-h3 {
-  font-size: 1.2rem;
-}
-
-
-/* =========================
-   Tables
-   ========================= */
-
-table {
-  border-collapse: collapse;
-  width: 100%;
-}
-
-th, td {
-  border: 1px solid black;
-  padding: 8px;
-}
-
-
-/* =========================
-   Code Blocks
-   ========================= */
-
-pre {
-  position: relative;
-  background-color: #f5f5f5;
-  padding: 12px;
-  border-radius: 5px;
-  max-width: 100%;
-  overflow-x: auto;
-  margin-bottom: 2rem;
-}
-
-pre code {
-  font-family: monospace;
-  white-space: pre;
-  padding-right: 2.5em;
-}
-
-.copy-block-btn {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  background: none;
-  border: none;
-  font-size: 1em;
-  color: #008cba;
-  cursor: pointer;
-  opacity: 0;
-  transition: opacity 0.2s;
-}
-
-pre:hover .copy-block-btn {
-  opacity: 0.6;
-}
-
-.copy-block-btn:hover {
-  opacity: 1;
-}
-
-
-/* =========================
-   Course Schedule Cards
-   ========================= */
-
-.course-day {
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  margin-bottom: 1rem;
-  background: #fafafa;
-}
-
-.course-day summary {
-  cursor: pointer;
-  padding: 12px 16px;
-  font-weight: bold;
-  font-size: 1.05rem;
-  background: #e9eef2;
-  border-radius: 6px;
-}
-
-.course-day summary:hover {
-  background: #dbe4ea;
-}
-
-.day-content {
-  padding: 14px 18px;
-  line-height: 1.5;
-}
-
-
-/* =========================
-   Bullet List Formatting
-   ========================= */
-
-.day-content ul {
-  margin: 8px 0 0 20px;
-  padding: 0;
-}
-
-.day-content li {
-  margin-bottom: 6px;
-}
-
-
-/* =========================
-   Mobile Layout
-   ========================= */
-
-@media (max-width: 900px) {
-
-  .nav-links {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem;
-  }
-
-  .dropdown-content {
-    position: static;
-  }
-
-  .content {
-    padding: 1.5rem;
+  .ucl-logo {
+    height: 45px;
   }
 
 }
