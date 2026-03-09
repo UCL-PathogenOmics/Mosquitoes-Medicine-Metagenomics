@@ -23,7 +23,9 @@ body {
 
   display: flex;
   align-items: center;
-  justify-content: space-between;   /* NEW: pushes links to right */
+  justify-content: space-between; 
+
+  box-sizing: border-box;
 }
 
 /* UCL logo */
