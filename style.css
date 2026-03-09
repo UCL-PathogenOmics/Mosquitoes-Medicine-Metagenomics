@@ -23,6 +23,7 @@ body {
 
   display: flex;
   align-items: center;
+  justify-content: space-between;   /* NEW: pushes links to right */
 }
 
 /* UCL logo */
@@ -94,7 +95,7 @@ body {
 
 .content {
   margin-top: 85px;
-  padding-left: 140px;     /* left white margin */
+  padding-left: 140px;
   padding-right: 60px;
   padding-top: 2rem;
   background: white;
@@ -111,6 +112,7 @@ body {
   margin: 2rem 0;
   border-radius: 8px;
 }
+
 
 /* Footer */
 
