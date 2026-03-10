@@ -152,6 +152,11 @@ footer {
    Typography
    ========================= */
 
+h1 {
+  color: #F28C38;
+  font-size: 4rem;
+}
+
 h2 {
   color: #6d8494;
   font-size: 2.5rem;
