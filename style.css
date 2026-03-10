@@ -14,7 +14,7 @@ body {
 
 .topnav {
   width: 100%;
-  background-color: #F28C38;
+  background-color: #002147; /* dark blue */
   padding: 1rem 2rem;
   position: fixed;
   top: 0;
@@ -27,6 +27,7 @@ body {
 
   box-sizing: border-box;
 }
+
 
 /* UCL logo */
 
@@ -53,8 +54,28 @@ body {
   cursor: pointer;
 }
 
-.nav-links a:hover {
+.nav-links a:hover,
+.nav-dropdown span:hover {
   text-decoration: underline;
+}
+
+
+/* Apply Now button */
+
+.apply-btn {
+  background-color: #F28C38; /* orange */
+  color: #002147 !important; /* dark blue text */
+  padding: 8px 18px;
+  border-radius: 6px;
+  font-weight: bold;
+  border: 2px solid #F28C38;
+  transition: all 0.2s ease;
+}
+
+.apply-btn:hover {
+  background-color: #ff9f4d;
+  transform: translateY(-1px);
+  text-decoration: none;
 }
 
 
@@ -69,7 +90,7 @@ body {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #F28C38;
+  background-color: #002147; /* match navbar */
   padding: 0.8rem 1.2rem;
   top: 100%;
   left: 0;
@@ -81,6 +102,7 @@ body {
   padding: 8px 0;
   font-size: 1.05rem;
   font-weight: normal;
+  color: white;
 }
 
 /* Desktop hover + mobile tap */
