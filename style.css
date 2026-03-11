@@ -131,16 +131,15 @@ body {
   width:50%;
   display:flex;
   align-items:flex-start;
-  justify-content:flex-end;
-  padding:60px 80px 40px 40px;
+  justify-content:center;
+  padding:60px 40px;
   box-sizing:border-box;
 }
 
 .right-image img{
+  max-width:400px;   /* controls overall size */
   width:100%;
-  max-height:500px;  
   height:auto;
-  object-fit:cover;
   border-radius:8px;
 }
 
