@@ -14,7 +14,7 @@ body {
 
 .topnav {
   width: 100%;
-  background-color: #002147; /* dark blue */
+  background-color: #002147;
   padding: 1rem 2rem;
   position: fixed;
   top: 0;
@@ -23,7 +23,7 @@ body {
 
   display: flex;
   align-items: center;
-  justify-content: space-between; 
+  justify-content: space-between;
 
   box-sizing: border-box;
 }
@@ -63,8 +63,8 @@ body {
 /* Apply Now button */
 
 .apply-btn {
-  background-color: #F28C38; /* orange */
-  color: #002147 !important; /* dark blue text */
+  background-color: #F28C38;
+  color: #002147 !important;
   padding: 8px 18px;
   border-radius: 6px;
   font-weight: bold;
@@ -90,7 +90,7 @@ body {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #002147; /* match navbar */
+  background-color: #002147;
   padding: 0.8rem 1.2rem;
   top: 100%;
   left: 0;
@@ -105,8 +105,6 @@ body {
   color: white;
 }
 
-/* Desktop hover + mobile tap */
-
 .nav-dropdown:hover .dropdown-content,
 .nav-dropdown:focus-within .dropdown-content {
   display: block;
@@ -114,7 +112,34 @@ body {
 
 
 /* =========================
-   Page Content
+   Main Homepage Layout
+   ========================= */
+
+.main-layout{
+  display:flex;
+  min-height:100vh;
+  margin-top:85px; /* offset navbar */
+}
+
+.left-content{
+  width:50%;
+  padding:80px 80px 40px 120px;
+  box-sizing:border-box;
+}
+
+.right-image{
+  width:50%;
+}
+
+.right-image img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+
+/* =========================
+   Page Content (other pages)
    ========================= */
 
 .content {
@@ -127,7 +152,23 @@ body {
 }
 
 
-/* Images */
+/* =========================
+   Blurb Text
+   ========================= */
+
+.blurb-text{
+  font-size:2rem;
+  line-height:1.6;
+}
+
+.blurb-text ul{
+  padding-left:20px;
+}
+
+
+/* =========================
+   Images
+   ========================= */
 
 .content-image {
   width: 1400px;
@@ -138,7 +179,9 @@ body {
 }
 
 
-/* Footer */
+/* =========================
+   Footer
+   ========================= */
 
 footer {
   padding: 1rem 2rem;
@@ -264,41 +307,26 @@ pre:hover .copy-block-btn {
   margin-bottom: 6px;
 }
 
-.blurb-section{
-  display:flex;
-  flex-direction:row;
-  align-items:center;
-  justify-content:space-between;
-  gap:40px;
-  margin:100px auto;
-  max-width:1100px;
-}
-
-.blurb-text{
-  width:60%;
-  font-size:2rem;
-  line-height:1.6;
-}
-
-.blurb-text ul{
-  padding-left:20px;
-}
-
-.blurb-image{
-  width:40%;
-}
-
-.blurb-image img{
-  width:100%;
-  height:auto;
-}
-
 
 /* =========================
    Mobile Layout
    ========================= */
 
 @media (max-width: 900px) {
+
+  .main-layout{
+    flex-direction:column;
+  }
+
+  .left-content{
+    width:100%;
+    padding:40px 30px;
+  }
+
+  .right-image{
+    width:100%;
+    height:350px;
+  }
 
   .nav-links {
     flex-direction: column;
@@ -311,7 +339,7 @@ pre:hover .copy-block-btn {
   }
 
   .content {
-    margin-left: 0;       
+    margin-left: 0;
     margin-right: 0;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
