@@ -129,6 +129,7 @@ body {
 
 .right-image{
   width:50%;
+  height:calc(100vh - 85px);
 }
 
 .right-image img{
