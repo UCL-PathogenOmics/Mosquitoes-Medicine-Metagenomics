@@ -264,6 +264,35 @@ pre:hover .copy-block-btn {
   margin-bottom: 6px;
 }
 
+.blurb-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  margin: 40px 0;
+}
+
+.blurb-text {
+  flex: 1;
+  font-size: 1.4rem;
+}
+
+.blurb-text ul {
+  padding-left: 20px;
+  line-height: 1.6;
+}
+
+.blurb-image {
+  flex: 1;
+  text-align: right;
+}
+
+.blurb-image img {
+  max-height: 500px;
+  width: auto;
+  border-radius: 6px;
+}
+
 
 /* =========================
    Mobile Layout
